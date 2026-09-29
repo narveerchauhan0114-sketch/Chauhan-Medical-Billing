@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chauhan Medical Billing | U.S. Healthcare Revenue Cycle Management</title>
+<meta name="description" content="Medical billing, charge posting, claims follow-up and AR recovery for U.S. healthcare practices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f8f7;--surface:#fff;--ink:#0f2a2e;--muted:#4b6266;--brand:#0b6b63;--brand-ink:#fff;--accent:#e4f2ee;--line:#d3e0dd;--warn:#b4531a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1a1c;--surface:#132628;--ink:#e6f1ef;--muted:#9bb3b0;--brand:#4fc3b4;--brand-ink:#08201d;--accent:#173234;--line:#26413f;--warn:#e89a62}}
+:root[data-theme="dark"]{--bg:#0c1a1c;--surface:#132628;--ink:#e6f1ef;--muted:#9bb3b0;--brand:#4fc3b4;--brand-ink:#08201d;--accent:#173234;--line:#26413f;--warn:#e89a62}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.logo{font:600 22px 'Source Serif 4',Georgia,serif;text-decoration:none}
+.logo b{color:var(--brand)}
+nav a{margin-left:20px;text-decoration:none;font-weight:600;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--brand)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:48px 0 64px}
+h1{font:600 clamp(32px,5.4vw,54px)/1.1 'Source Serif 4',Georgia,serif;margin:0 0 18px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 26px}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:13px 24px;border-radius:8px;font-weight:800;text-decoration:none;border:0;font-size:16px;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:10px}
+.claim{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.claim h2{font-size:14px;margin:0 0 14px;color:var(--muted);font-weight:600}
+.row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-top:1px solid var(--line);font-size:15px}
+.tag{font-size:13px;font-weight:800;padding:3px 10px;border-radius:99px;background:var(--accent);color:var(--brand)}
+.tag.w{color:var(--warn)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.t{font:600 clamp(26px,4vw,36px)/1.15 'Source Serif 4',Georgia,serif;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 30px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.grid div{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.grid h3{margin:0 0 6px;font-size:18px}
+.grid p{margin:0;color:var(--muted);font-size:15px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;padding:0;list-style:none;counter-reset:s}
+.flow li{counter-increment:s;background:var(--accent);border-radius:10px;padding:16px;font-weight:600;font-size:15px}
+.flow li::before{content:counter(s) ".";color:var(--brand);font-weight:800;margin-right:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+ul.chk{list-style:none;padding:0;margin:0}
+ul.chk li{padding:8px 0 8px 28px;position:relative}
+ul.chk li::before{content:"";position:absolute;left:4px;top:15px;width:12px;height:7px;border-left:3px solid var(--brand);border-bottom:3px solid var(--brand);transform:rotate(-45deg)}
+form{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+label{font-weight:600;font-size:14px;display:grid;gap:6px}
+input,textarea{font:inherit;padding:11px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media(max-width:780px){.hero,.two{grid-template-columns:1fr}nav a{margin:0 16px 0 0}.btn.alt{margin:10px 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">Chauhan <b>Medical Billing</b></a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Claims filed clean. Payments followed up until they land.</h1>
+    <p class="lead">Chauhan Medical Billing handles charge posting, claim submission, denial management and AR follow-up for U.S. healthcare practices, so your team can focus on patients.</p>
+    <a class="btn" href="#contact">Get a free billing review</a><a class="btn alt" href="#services">See services</a>
+  </div>
+  <aside class="claim" aria-label="Sample claim tracker">
+    <h2>Sample claim tracker</h2>
+    <div class="row"><span>Charge entered</span><span class="tag">Done</span></div>
+    <div class="row"><span>Claim scrubbed and sent</span><span class="tag">Done</span></div>
+    <div class="row"><span>Payer denial (CO-16)</span><span class="tag w">Worked</span></div>
+    <div class="row"><span>Corrected claim resubmitted</span><span class="tag">Paid</span></div>
+  </aside>
+</div>
+
+<section id="services">
+  <h2 class="t">What we handle</h2>
+  <p class="sub">End-to-end revenue cycle support, or just the part you need help with.</p>
+  <div class="grid">
+    <div><h3>Charge posting</h3><p>Accurate charge entry from superbills and encounter notes, checked before billing.</p></div>
+    <div><h3>Claim submission</h3><p>Clean claims to Medicare, Medicaid and commercial payers, with edits caught early.</p></div>
+    <div><h3>Denial management</h3><p>Every denial reviewed, corrected and appealed with the right documentation.</p></div>
+    <div><h3>AR follow-up</h3><p>Aged accounts worked by payer and balance, so old claims stop going cold.</p></div>
+    <div><h3>Payment posting</h3><p>ERA and EOB posting with adjustments and patient balances reconciled.</p></div>
+    <div><h3>Reporting</h3><p>Monthly collections, denial reasons and AR aging in plain language.</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <h2 class="t">How a claim moves with us</h2>
+  <p class="sub">A clear sequence, with nothing left waiting on a desk.</p>
+  <ol class="flow">
+    <li>Receive encounter data</li><li>Post charges</li><li>Scrub and submit</li><li>Track payer status</li><li>Post payment or appeal</li>
+  </ol>
+</section>
+
+<section>
+  <div class="two">
+    <div>
+      <h2 class="t">Why practices work with us</h2>
+      <ul class="chk">
+        <li>Hands-on experience in U.S. healthcare RCM</li>
+        <li>One point of contact for your account</li>
+        <li>Clear monthly reports, no jargon</li>
+        <li>HIPAA-conscious handling of patient data</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="t">Who we help</h2>
+      <ul class="chk">
+        <li>Solo and small group practices</li>
+        <li>Clinics and specialty providers</li>
+        <li>Practices with growing denials or old AR</li>
+        <li>Providers moving billing out of house</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="two">
+    <div>
+      <h2 class="t">Request a free billing review</h2>
+      <p class="sub">Tell us about your practice and current billing challenges. We reply within one business day.</p>
+      <p><strong>Email:</strong> <a href="mailto:narveerchauhan0114@gmail.com">narveerchauhan0114@gmail.com</a><br><strong>Phone:</strong> <a href="tel:+917088661915">+91 70886 61915</a></p>
+    </div>
+    <form id="f">
+      <label>Your name<input name="n" required autocomplete="name"></label>
+      <label>Practice name<input name="p"></label>
+      <label>Email<input type="email" name="e" required autocomplete="email"></label>
+      <label>What do you need help with?<textarea name="m" rows="3"></textarea></label>
+      <button class="btn" type="submit">Send request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>&copy; <span id="y">2026</span> Chauhan Medical Billing. Do not send patient health information through this form.</footer>
+</div>
+<script>
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var d=new FormData(ev.target);
+  var body='Name: '+d.get('n')+'\nPractice: '+d.get('p')+'\nEmail: '+d.get('e')+'\n\n'+d.get('m');
+  location.href='mailto:narveerchauhan0114@gmail.com?subject='+encodeURIComponent('Billing review request')+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
